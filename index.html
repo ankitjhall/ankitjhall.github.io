@@ -1,1 +1,189 @@
-Hi
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pixybot</title>
+  <link rel="icon" href="assets/favicon.ico" type="image/icon" sizes="16x16">
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/flaticon.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="loading" class="vertical-center"><img class="align-middle" src="assets/images/loading.svg"></div>
+
+  <div class="header">
+    <ul>
+      <a href="#home">
+        <li>Home</li>
+      </a>
+      <a href="#intro">
+        <li>About</li>
+      </a>
+      <a href="#build">
+          <li>Build</li>
+        </a>
+      <a href="#team">
+        <li>Team</li>
+      </a>
+    </ul>
+  </div>
+  <section class="landing" id="#home">
+    <canvas id="scene"></canvas>
+    <input id="copy" type="text" value="AI Robotics" style="display:none;" />
+
+  </section>
+
+  <section class="intro" id="intro">
+    <div class="title">Pixybot</div>
+    <p class="description">
+      <strong>Pixybot</strong> is an autonomous robot which is capable of recognizing objects with specific shape, size and
+      color. It is designed to move automatically and follow objects while avoiding obstacles. The robot is
+      using two different micro-controllers LPC 54114 and Pocket beagle. The pixy vision system is used for
+      recognizing the object shape, color and size. Two ultrasonic sensors are used to avoid obstacles. The
+      robot is driven by DC motors which are controlled by LPC54114 from NXP. The LPC54114 is running
+      FreeRTOS whereas Pocket beagle is on LINUX. So, it can be said that this robot has two different brains
+      interconnected with each other. The first one Pocket beagle is connected to pixy2 and LPC54114 is
+      connected to DC motors.
+    </p>
+    
+      <h1 style="text-align: center; padding: 30px;">Gallery</h1>
+    <div class="grid">
+      <div class="grid-item">
+        <figure>
+          <img src="assets/images/3.jpeg" alt="">
+        </figure>
+      </div>
+      <div class="grid-item">
+        <figure>
+          <img src="assets/images/4.jpeg" alt="">
+        </figure>
+      </div>
+      <div class="grid-item">
+        <figure>
+          <img src="assets/images/5.jpeg" alt="">
+        </figure>
+      </div>
+      <div class="grid-item">
+        <figure>
+          <img src="assets/images/6.jpeg" alt="">
+        </figure>
+      </div>
+      <div class="grid-item">
+        <figure>
+          <img src="assets/images/1.jpeg" alt="">
+        </figure>
+      </div>
+      <div class="grid-item">
+        <figure>
+          <img src="assets/images/2.jpeg" alt="">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="build" id="build">
+    <div class="title">Build Information</div>
+
+    <div class="row">
+    <div class="col-md-12">
+    <ul class="components">
+      <li><a href="https://www.nxp.com/products/processors-and-microcontrollers/arm-microcontrollers/general-purpose-mcus/lpc54000-cortex-m4-/low-power-microcontrollers-mcus-based-on-arm-cortex-m4-cores-with-optional-cortex-m0-plus-co-processor:LPC541XX" target="_blank">NXP LPC54114</a></li>
+      <li><a href="https://beagleboard.org/pocket" target="_blank">Pocket Beagle</a></li>
+      <li><a href="https://pixycam.com/pixy2/" target="_blank">Pixy2</a></li>
+      <li><a href="https://www.pololu.com/product/1418" target="_blank">Zumo chassis kit</a></li>
+      <li><a href="https://www.creatroninc.com/product/4-35v-3a-adjustable-step-up-regulator/" target="_blank">Adjustable Step Up Regulator</a></li>
+      <li><a href="https://www.pololu.com/product/2361" target="_blank">DC Motors</a></li>
+      <li><a href="https://www.creatroninc.com/product/hc-sr04-ultrasonic-sensor/" target="_blank">Ultrasonic Sensors</a></li>
+      <li><a href="https://www.creatroninc.com/product/lithium-ion-battery-2500mah/" target="_blank">Lithium Ion battery</a></li>
+      <li><a href="https://www.creatroninc.com/product/hm-10-bluetooth-low-energy-module-a/?search_query=hm+10&amp;results=68" target="_blank">HM-10</a></li>
+      <li><a href="https://www.pololu.com/product/2130" target="_blank">DRV8833 Dual Motor Driver</a></li>
+
+
+
+    </ul>
+  </div>
+</div>
+  </section>
+
+  <section class="team" id="team">
+    <div class="title">Team</div>
+
+    <div class="row">
+    <div class="card">
+      <div class="photo"
+        style="background-image: url('assets/images/Ankit.jpeg');">
+      </div>
+      <div class="banner"
+        style="background-image: url('http://en.es-static.us/upl/2016/02/M42-Orion-Nebula-2-5-2016.jpg');"></div>
+      <ul>
+        <li><b>Ankit Jhall</b></li>
+        <li style="padding-top: 10px;font-size: 16px;">Engineer</li>
+        <li style="padding-top: 5px; font-size: 16px;">+1 (647)-581-9698</li>
+      </ul>
+      <div class="social-media-banner">
+        <a href="mailto:ankitjhall33@gmail.com" target="=_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        <a href="https://github.com/ankitjhall" target="_blank"><i class="fa fa-github"
+            aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/ankit-jhall-76b8b3167/" target="_blank"><i class="fa fa-linkedin"></i></a>
+      </div>
+    </div>
+
+    <div class="card">
+        <div class="photo"
+          style="background-image: url('assets/images/Jass.png');">
+        </div>
+        <div class="banner"
+          style="background-image: url('https://vignette.wikia.nocookie.net/interstellarfilm/images/9/9b/Black_hole.png');"></div>
+        <ul>
+          <li><b>Jaspreet Singh</b></li>
+          <li style="padding-top: 10px;font-size: 16px;">Developer/Engineer</li>
+          <li style="padding-top: 5px; font-size: 16px;">+1 (416)-270-1580</li>
+        </ul>
+        <div class="social-media-banner">
+          <a href="mailto:jaspreetsinghkhaira@gmail.com" target="=_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+          <a href="https://github.com/jasskhaira" target="_blank"><i class="fa fa-github"
+              aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/jaspreet-singh-93225b151/" target="_blank"><i class="fa fa-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="card">
+          <div class="photo"
+            style="background-image: url('assets/images/sir.jfif');">
+          </div>
+          <div class="banner"
+            style="background-image: url('https://3c1703fe8d.site.internapcdn.net/newman/csz/news/800/2018/crabnebulaac.jpg');"></div>
+          <ul>
+            <li><b>Takis Zourntos</b></li>
+            <li style="padding-top: 10px;font-size: 16px;">Instructor/Engineer</li>
+          </ul>
+          <div class="social-media-banner">
+            <a href="https://github.com/proftakis" target="_blank"><i class="fa fa-github"
+                aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/takis-zourntos-689970129/" target="_blank"><i class="fa fa-linkedin"></i></a>
+          </div>
+        </div>
+  </div>
+
+  </section>
+
+  <script src="assets/js/animation.js"></script>
+  <script>
+  setTimeout(function() {
+  $('#loading').addClass('hidden');
+}, 2000);
+</script>
+<footer>
+All Rights Reserved Pixybot 2019. A Website by <a href="https://choros.io">Choros</a>.
+</footer>
+</body>
+
+</html>
